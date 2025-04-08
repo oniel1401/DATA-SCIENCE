@@ -1,0 +1,10 @@
+streamlit
+Pillow
+numpy
+joblib
+fastai
+fastai 
+fastbook 
+torchvision 
+timm 
+opencv-python
