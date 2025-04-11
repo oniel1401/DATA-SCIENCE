@@ -1,9 +1,0 @@
-streamlit
-Pillow
-numpy
-joblib
-fastai 
-fastbook 
-torchvision 
-timm 
-opencv-python
