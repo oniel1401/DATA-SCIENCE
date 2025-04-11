@@ -9,9 +9,19 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 import io
+import pathlib
+import platform
 
-#modèle
+
+#Windows
+if platform.system() == 'Windows':
+    pathlib.PosixPath = pathlib.WindowsPath
+
+from fastai.vision.all import *
 learn = load_learner('accident3_detection.pkl')
+
+# #modèle
+# learn = load_learner('accident3_detection.pkl')
 
 #envoie de mail
 def envoyer_email(subject, body, to_email, image_path):
